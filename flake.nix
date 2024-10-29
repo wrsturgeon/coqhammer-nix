@@ -1,7 +1,7 @@
 {
   inputs = {
     src = {
-      url = "github:lukaszcz/coqhammer";
+      url = "github:lukaszcz/coqhammer/master";
       flake = false;
     };
   };
@@ -32,6 +32,7 @@
           BINDIR = "bin/";
           tactics = coq-pkgs.mkCoqDerivation {
             inherit
+              pname
               propagatedBuildInputs
               mlPlugin
               src
@@ -43,7 +44,6 @@
               DESTDIR
               BINDIR
               ;
-            pname = "${pname}";
             buildPhase = "make tactics";
             installPhase = "make install-tactics";
           };

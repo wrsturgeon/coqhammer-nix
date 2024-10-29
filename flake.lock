@@ -1,0 +1,28 @@
+{
+  "nodes": {
+    "root": {
+      "inputs": {
+        "src": "src"
+      }
+    },
+    "src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1722164119,
+        "narHash": "sha256-v22BbFaGmkgN1h92X/hYDATu/MbIaOkJDvrKM/WsOqY=",
+        "owner": "lukaszcz",
+        "repo": "coqhammer",
+        "rev": "eca86302384cec35c2b894b741137a6dda1d50bb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lukaszcz",
+        "ref": "master",
+        "repo": "coqhammer",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
